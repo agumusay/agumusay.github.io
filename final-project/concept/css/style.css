@@ -8,7 +8,7 @@
           scroll-behavior: smooth;
       }
 
-      .a {
+      a {
           text-decoration: none;
       }
 
@@ -21,7 +21,23 @@
       /*
     Color & Style
 */
-      div,
+
+      #news {
+          background-color: darksalmon;
+      }
+
+      #about {
+          background-color: cornsilk;
+      }
+
+      #services {
+          background-color: fuchsia;
+      }
+
+      #contact {
+          background-color: darkgoldenrod;
+      }
+
       header,
       footer {
           color: #fff;
@@ -30,12 +46,21 @@
 
       }
 
+      aside {
+          background-color: rgba(200, 210, 220, 0.8);
+      }
+
+      main {
+          color: rgb(255, 255, 255, 0.7);
+      }
+
       .level2 {
           background-color: rgb(130, 140, 150);
       }
-flex-box{
-    outline: none;
-}
+
+      flex-box {
+          outline: none;
+      }
 
       /*
 Navigation
@@ -50,7 +75,7 @@ Navigation
 
       nav#main-navigation {
           position: fixed;
-          padding: 5px;
+          padding: 5px 0;
       }
 
       nav#main-navigation ul {
@@ -67,9 +92,10 @@ Navigation
           background-color: rgb(200, 108, 0);
           padding: 3px 5px;
       }
-nav#main-navigation ul li a:hover {
-    background-color: rgb(255, 128, 0);
-}
+
+      nav#main-navigation ul li a:hover {
+          background-color: rgb(255, 128, 0);
+      }
 
 
       /*
@@ -80,11 +106,11 @@ Navigation
       /*
     Layout
 */
-div{
-    padding: 5px;
-}
+      div {
+          padding: 5px;
+      }
 
-   
+
       .flex-box {
           display: flex;
       }
@@ -108,11 +134,17 @@ div{
           display: block;
           width: 100%;
       }
-section{
-    padding-top: 20vh;
-    height: 80vh;
-    
-}
+
+      section {
+          padding-top: 20vh;
+
+
+      }
+
+      article,
+      aside {
+          height: 50vh;
+      }
 
       /**
 Layout for Header-Content-Footer
@@ -122,9 +154,7 @@ Layout for Header-Content-Footer
           height: 25vh;
       }
 
-      main {
-          
-}
+      main {}
 
       footer {
           height: 15vh;
@@ -134,3 +164,30 @@ Layout for Header-Content-Footer
       /**
 Layout for Header-Content-Footer
 **/
+
+
+      /*
+Responsive Design
+*/
+
+      @media only screen and (min-width:600px) {
+          header {
+
+              background-color: rgb(255, 0, 0);
+
+          }
+          .content-wrapper{
+              display: flex;
+          }
+          
+          .article-wrapper{
+              width: 70%;
+          }
+          aside{
+             
+          }
+          
+
+
+
+      }
