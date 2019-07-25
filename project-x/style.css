@@ -78,23 +78,23 @@ body{
 }
 .lefter{
     transform: translateX(-60px) translateZ(-50px) rotateY(-10deg);
-    background-image: url(icons/open-book.png)
+    background-image: url()
 }
 .left{
     transform: translateX(-30px) translateZ(-25px) rotateY(-5deg);
-    background-image: url(icons/settings.png)
+    background-image: url()
 }
 .center{
     opacity: 1;
-    background-image: url(icons/reunion.png)
+    background-image: url()
 }
 .right{
     transform: translateX(30px) translateZ(-25px) rotateY(5deg);
-    background-image: url(icons/light.png)
+    background-image: url()
 }
 .righter{
     transform: translateX(60px) translateZ(-50px) rotateY(10deg);
-    background-image: url(icons/envelope.png)
+    background-image: url()
 }
 .explainer{
     font-weight: 300;
