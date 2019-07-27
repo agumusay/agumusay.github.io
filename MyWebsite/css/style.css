@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+li {
+    font-family: 'Audiowide', sans-serif;
+    width: 150px;
+    height: 40px;
+    display: block;
+    background-image: linear-gradient(#1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+    will-change: perspective;
+    box-shadow: 0.2rem 0.2rem 0.5rem #000;
+    margin: 5px;
+    border-radius: 0.3rem;
+    border-style: outset;
+    border-color: darkslateblue;
+
+
+
+}
+
+.b1 {}
+
+.b2 {
+
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s linear;
+
+
+}
+
+.b3 {
+
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+
+}
+
+
+
+.b4 {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.7s linear;
+
+
+}
+
+
+.b5 {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.9s linear;
+
+
+}
+
+.text {
+    text-decoration: none;
+    color: #222;
+    text-shadow: 0px 2px 3px #555;
+    text-align-last: center;
+    padding: 5px;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+li p:hover {
+    color: aqua;
+}
+
+
+
+
+ul:hover > li {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+@-ms-viewport {
+    width: device-width;
+}
