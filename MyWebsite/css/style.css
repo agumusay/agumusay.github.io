@@ -4,40 +4,74 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+body {
+    
+    background-image: url(../img/energy-3857970_1920.jpg);
+}
+/* page transition start */
+.page{
+    display: none;
+}
 
+.default{
+    display: block;
+}
+:target{
+    display: block;
+}
+:target ~ .default {
+    display: none;
+}
+/* page transition end */
+
+
+a {
+    text-decoration: none;
+}
 
 li {
     font-family: 'Audiowide', sans-serif;
     width: 150px;
-    height: 40px;
+    height: 35px;
     display: block;
     background-image: linear-gradient(#1e3c72 0%, #1e3c72 1%, #2a5298 100%);
-    will-change: perspective;
+    will-change: transform;
     box-shadow: 0.2rem 0.2rem 0.5rem #000;
     margin: 5px;
     border-radius: 0.3rem;
     border-style: outset;
     border-color: darkslateblue;
+    position: relative;
+}
+
+ul {
+    display: inline-block;
+}
 
 
-
+ul:hover > li {
+    opacity: 1;
+    visibility: visible;
 }
 
 .b2 {
 
-    visibility: hidden;
+    visibility: visible;
     opacity: 0;
-    transition: visibility 0s, opacity 0.6s linear;
-
-
+    transition: visibility 0.4s linear, opacity 0.5s linear;
+    -webkit-transition: visibility 0.4s linear, opacity 0.5s linear;
+    -moz-transition: visibility 0.4s linear, opacity 0.5s linear;
+    -o-transition: visibility 0.4s linear, opacity 0.5s linear;
 }
 
 .b3 {
 
     visibility: hidden;
     opacity: 0;
-    transition: visibility 0s, opacity 1.2s linear;
-
+    transition: visibility 0.3s linear, opacity 0.4s linear;
+    -webkit-transition: visibility 0.3s linear, opacity 0.4s linear;
+    -moz-transition: visibility 0.3s linear, opacity 0.4s linear;
+    -o-transition: visibility 0.3s linear, opacity 0.4s linear;
 }
 
 
@@ -45,18 +79,20 @@ li {
 .b4 {
     visibility: hidden;
     opacity: 0;
-    transition: visibility 0s, opacity 1.8s linear;
-
-
+    transition: visibility 0.2s linear, opacity 0.6s linear;
+    -webkit-transition: visibility 0.2s linear, opacity 0.6s linear;
+    -moz-transition: visibility 0.2s linear, opacity 0.6s linear;
+    -o-transition: visibility 0.2s linear, opacity 0.6s linear;
 }
 
 
 .b5 {
     visibility: hidden;
     opacity: 0;
-    transition: visibility 0s, opacity 2.4s linear;
-
-
+    transition: visibility 0.1s linear, opacity 0.8s linear;
+    -webkit-transition: visibility 0.1s linear, opacity 0.8s linear;
+    -moz-transition: visibility 0.1s linear, opacity 0.8s linear;
+    -o-transition: visibility 0.1s linear, opacity 0.8s linear;
 }
 
 .text {
@@ -68,31 +104,14 @@ li {
 
 }
 
-a {
-    text-decoration: none;
-}
+
 
 li p:hover {
     color: aqua;
 }
 
 
-
-
-ul:hover > li {
-    visibility: visible;
-    opacity: 1;
 }
-
-ul {
-    display: inline-block;
-}
-
-
-
-
-
-
 
 @-ms-viewport {
     width: device-width;
