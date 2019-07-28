@@ -23,13 +23,11 @@ li {
 
 }
 
-.b1 {}
-
 .b2 {
 
     visibility: hidden;
     opacity: 0;
-    transition: visibility 0s, opacity 0.3s linear;
+    transition: visibility 0s, opacity 0.6s linear;
 
 
 }
@@ -38,7 +36,7 @@ li {
 
     visibility: hidden;
     opacity: 0;
-    transition: visibility 0s, opacity 0.5s linear;
+    transition: visibility 0s, opacity 1.2s linear;
 
 }
 
@@ -47,7 +45,7 @@ li {
 .b4 {
     visibility: hidden;
     opacity: 0;
-    transition: visibility 0s, opacity 0.7s linear;
+    transition: visibility 0s, opacity 1.8s linear;
 
 
 }
@@ -56,7 +54,7 @@ li {
 .b5 {
     visibility: hidden;
     opacity: 0;
-    transition: visibility 0s, opacity 0.9s linear;
+    transition: visibility 0s, opacity 2.4s linear;
 
 
 }
@@ -86,6 +84,9 @@ ul:hover > li {
     opacity: 1;
 }
 
+ul {
+    display: inline-block;
+}
 
 
 
