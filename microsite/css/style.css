@@ -21,11 +21,11 @@ body {
 .page {
     display: none;
     width: 90vw;
-    height: 85vh;
+    height: 75vh;
     background-color: rgba(42, 82, 152, 0.6);
     box-shadow: inset 0 0 0 90vw rgba(255, 255, 255, 0.4);
     margin: auto;
-    margin-top: 5vh;
+    margin-top: 7vh;
     border-radius: 10px;
     border-top: 0.1rem outset rgba(100, 150, 255, 0.9);
     border-left: 0.1rem outset rgba(100, 150, 255, 0.9);
@@ -64,10 +64,19 @@ h2 {
 
 /* page transition end */
 
-
-a {
-    text-decoration: none;
+/*Navigation Start*/
+nav{
+    text-align: center;
 }
+nav ul {
+    display: inline-block;
+    flex-flow: wrap;   
+}
+ul:hover > li {
+    opacity: 1;
+    visibility: visible;
+}
+
 
 li {
     font-family: 'Audiowide', sans-serif;
@@ -84,19 +93,11 @@ li {
     border-color: #2a5298;
     position: relative;
 }
-nav{
-    text-align: center;
+a {
+    text-decoration: none;
 }
-nav ul {
-    display: inline-flex;
-    flex-flow: wrap;
-    
-}
-
-
-ul:hover > li {
-    opacity: 1;
-    visibility: visible;
+li:hover p {
+    color: aqua;
 }
 
 .b2 {
@@ -150,13 +151,7 @@ ul:hover > li {
     background-color: rgba(255, 255, 255, 0);
     font-size: 1.7vh;
 }
-
-
-
-li:hover p {
-    color: aqua;
-}
-
+/*navigation ends*/
 
 }
 
