@@ -6,12 +6,7 @@
 }
 
 body {
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: top;
-    background-image: url(../img/energy-3857970_1920.jpg);
-
-
+    
 }
 
 /* page transition start */
@@ -73,7 +68,7 @@ ul:hover > li {
 }
 
 
-li {
+nav ul li {
     font-family: 'Merriweather', sans-serif;
     width: 9em;
     height: 2.3em;
