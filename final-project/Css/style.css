@@ -16,7 +16,7 @@
 nav {
     font-family: "Source Sans Pro", sans-serif;
     width: 95vw;
-    height: 40px;
+    height: 50px;
     background-color: #a13737;
     margin-left: auto;
     margin-right: auto;
@@ -25,22 +25,22 @@ nav {
 
 }
 
-#dropdown-list {
-    display: none;
-}
 
 ul {
     display: flex;
 }
 
 nav ul li {
+    width: 9em;
+    height: 2.3em;
     display: inline;
-    font-size: 3vh;
-    margin: 0.4vw;
-    transform: skewX(-20deg);
-    margin-left: 2vw;
-    margin-top: 1vw;
-
+    flex-flow: wrap;
+    background-image: linear-gradient(#1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+    box-shadow: 0.2rem 0.2rem 0.5rem #000;
+    margin: 5px;
+    border-radius: 0.3rem;
+    border-style: outset;
+    border-color: #2a5298;
 
 
 }
@@ -51,26 +51,47 @@ nav ul li {
 a {
     color: #222;
     text-shadow: 0px 2px 3px #555;
-    border: 2px outset #a13737;
+    text-align-last: center;
+    padding: 5px;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 2.5vh;
+    
     
 
     
 }
 
 
-a:hover {
-    background-color: #e01212;
-    border: 2px outset #e01212;
+li:hover a {
+    color: #00FFFF;
+}
+button{
+    align-self: flex-start;
+    color: #222;
+    text-shadow: 0px 2px 3px #555;
+    text-align-last: center;
+    padding: 5px;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 2.5vh;
+}
+.btnx:hover {
+    color: #00FFFF;
 }
 
 nav ul .btnx{
-    border: none;
-    background-color: inherit;
-    font-size: 30px;
-    cursor: pointer;
     display: none;
-    color: #222;
-    text-shadow: 0px 2px 3px #555;
+    width: 2.3em;
+    height: 2.3em;
+    flex-flow: wrap;
+    background-image: linear-gradient(#1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+    box-shadow: 0.2rem 0.2rem 0.5rem #000;
+    margin: 5px;
+    border-radius: 0.3rem;
+    border-style: outset;
+    border-color: #2a5298;
+
     
 }
 /*Header*/
@@ -100,14 +121,15 @@ nav ul .btnx{
   a{
     display: block;
   }
-}
-
-@media only screen and (max-width: 640px) {
-   ....
-  
-  button{
+ nav ul .btnx{
     
     display: block;
     cursor: pointer;
   }
+}
+
+@media only screen and (max-width: 640px) {
+   
+  
+  
 }
