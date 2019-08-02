@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title> </title>
+    <meta charset="utf-8">
+    <meta name="author" content="Ali San Gümüsay">
+    <meta name="description" content="A wireframe for my final project in  DCI orientation course">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../final-project/Css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+</head>
+<header>
+    <nav id="main-menu">
+        <ul id="ulx">
+            <button onclick="toggleMobileNav()" id="dropby" class="default"></button>
+            <button onclick="hideMobileNav()" id="dropbt" class="drop-all"><i class="fas fa-times"></i></button>
+            <li class="drop-all"><a href="#prof">Profile</a></li>
+            <li class="drop-all"><a href="#exp">Experiences</a></li>
+            <li class="drop-all"><a href="#abi">Abilities</a></li>
+            <li class="drop-all"><a href="#proj">Projects</a></li>
+        </ul>
+
+    </nav>
+
+</header>
+
+
+
+<body>
+
+    <main>
+        <article>
+
+            <section id="prof">
+
+
+            </section>
+
+            <section id="exp">
+
+
+            </section>
+
+            <section id="abi">
+
+
+            </section>
+
+            <section id="proj">
+
+            </section>
+
+        </article>
+    </main>
+
+    <footer>
+
+
+
+
+    </footer>
+    <script>
+     var burgerIcon=document.getElementById("dropby")
+     var xIcon = document.getElementById ("dropbt")
+     var dropMenu=document.getElementsByClassName("drop-all")
+     
+     function toggleMobileNav(){
+        if (dropMenu.style.display == "none"){
+            dropMenu.style.display = "block";
+        } else{
+            dropMenu.style.display = "none";
+        }
+     }
+     
+</script>
+</body>
+
+
+
+
+</html>
