@@ -16,12 +16,13 @@
 </head>
 <header>
     <nav id="main-menu">
-        <ul id="ulx">
-            <button id="dropbt" class="btnx"><i class="fas fa-times"></i></button>
-            <li id="nav-prof"><a href="#prof">Profile</a></li>
-            <li id="nav-exp"><a href="#exp">Experiences</a></li>
-            <li id="nav-abi"><a href="#abi">Abilities</a></li>
-            <li id="nav-proj"><a href="#proj">Projects</a></li>
+        <ul>
+            <button onclick="toggleMobileNav()" id="dropby" class="default"></button>
+            <button onclick="hideMobileNav()" id="dropbt" class="drop-all"></button>
+            <li class="drop-all"><a href="#prof">Profile</a></li>
+            <li class="drop-all"><a href="#exp">Experiences</a></li>
+            <li class="drop-all"><a href="#abi">Abilities</a></li>
+            <li class="drop-all"><a href="#proj">Projects</a></li>
         </ul>
 
     </nav>
@@ -63,17 +64,17 @@
 
 
     </footer>
-    <script>
-      
+    <script type="text/javascript">
+        var burgerIcon = document.getElementById("dropby")
+        var xIcon = document.getElementById("dropbt")
+        var dropMenu = document.getElementsByClassName("drop-all")
 
-
-
-
-
+        function toggleMobileNav() {
+            if (dropMenu.style.display == "none") {
+                dropMenu.style.display = "block";
+            } else {
+                dropMenu.style.display = "none";
+            }
+        }
     </script>
-</body>
-
-
-
-
-</html>
+</body></html>
