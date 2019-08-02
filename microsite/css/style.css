@@ -70,7 +70,7 @@ nav{
 }
 nav ul {
     display: inline-block;
-    flex-flow: wrap;   
+       
 }
 ul:hover > li {
     opacity: 1;
@@ -83,7 +83,6 @@ li {
     width: 9em;
     height: 2.3em;
     display: inline-block;
-    flex-flow: wrap;
     background-image: linear-gradient(#1e3c72 0%, #1e3c72 1%, #2a5298 100%);
     will-change: transform;
     box-shadow: 0.2rem 0.2rem 0.5rem #000;
@@ -91,7 +90,7 @@ li {
     border-radius: 0.3rem;
     border-style: outset;
     border-color: #2a5298;
-    position: relative;
+    
 }
 a {
     text-decoration: none;
@@ -158,3 +157,11 @@ li:hover p {
 @-ms-viewport {
     width: device-width;
 }
+
+@media only screen and (max-width: 640px) {
+ 
+  ul{
+    flex-direction: column;
+    display: block;
+  }
+  
